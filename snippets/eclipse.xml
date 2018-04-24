@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- Hellfire additions -->
-  <project path="android" name="etherwvlf/hellfire" />
+  <!-- Eclipse additions -->
+  <project path="android" name="etherwvlf/eclipse" />
   <project path="external/bash" name="LineageOS/android_external_bash" />
   <project path="external/cmsdk-api-coverage" name="LineageOS/android_external_cmsdk-api-coverage" />
   <project path="external/exfat" name="LineageOS/android_external_exfat" />

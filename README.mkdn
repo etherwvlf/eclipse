@@ -1,4 +1,4 @@
-Hellfire
+Eclipse
 ===========
 
 
@@ -50,7 +50,7 @@ CREATE NEW BUILD ENVIRONMENT:
 
 `cd newbuild`
 
-`repo init -u https://github.com/etherwvlf/hellfire.git -b cm-14.1`
+`repo init -u https://github.com/etherwvlf/eclipse.git -b cm-14.1`
 
 SYNC SOURCES:
 
@@ -58,7 +58,7 @@ SYNC SOURCES:
 
 CREATE RELEASE KEYS FROM BUILD ROOT(DONT USE PASSWORD WHEN PROMPTED):
 
-`subject='/C=US/ST=Texas/L=El Paso/O=Pa!N/OU=Hellfire/CN=Hellfire/emailAddress=over@lord.com'`
+`subject='/C=US/ST=Texas/L=El Paso/O=Pa!N/OU=Eclipse/CN=Eclipse/emailAddress=over@lord.com'`
 
 `
 mkdir ~/.android-certs
