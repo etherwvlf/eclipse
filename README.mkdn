@@ -18,20 +18,23 @@ INSTALL PREREQUISITES:
 
 ADD adb AND fastboot to PATH(EDIT .bashrc AND ADD):
 
-`
+============================================
+
 if [ -d "$HOME/platform-tools" ] ; then
 
-    PATH="$HOME/platform-tools:$PATH"
-    
+PATH="$HOME/platform-tools:$PATH"
+
 fi
-`
-`
+
 if [ -d "$HOME/bin" ] ; then
 
-    PATH="$HOME/bin:$PATH"
-    
+PATH="$HOME/bin:$PATH"   
+
 fi
-`
+
+============================================
+
+INIT REPO:
 
 `source ~/.bashrc`
 
@@ -55,12 +58,11 @@ SYNC SOURCES:
 
 CREATE RELEASE KEYS FROM BUILD ROOT(DONT USE PASSWORD WHEN PROMPTED):
 
+`subject='/C=US/ST=Texas/L=El Paso/O=Pa!N/OU=Hellfire/CN=Hellfire/emailAddress=over@lord.com'`
+
 `
-subject='/C=US/ST=Texas/L=El Paso/O=Pa!N/OU=Hellfire/CN=Hellfire/emailAddress=over@lord.com'
 mkdir ~/.android-certs
-for x in releasekey platform shared media; do \
-    ./development/tools/make_key ~/.android-certs/$x "$subject"; \
-done
+for x in releasekey platform shared media; do ./development/tools/make_key ~/.android-certs/$x "$subject"; done
 `
 
 TO BUILD:
